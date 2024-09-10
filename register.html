@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register - Bank System</title>
+    <title>Register - Infinia</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -11,7 +11,7 @@
     <header>
         <nav>
             <div class="logo">
-                <a href="index.html">Our Bank System</a>
+                <a href="index.html">Infinia</a>
             </div>
             <div class="nav-links">
                 <a href="login.html">Login</a>
@@ -21,50 +21,73 @@
     </header>
 
     <main>
-        <section class="register-section">
+        <div id="register-section" class="register-section">
             <h2>Регистрация</h2>
-            <form action="#" class="register-form">
+            <form id="registerForm">
                 <div class="form-group">
-                    <label for="email">Имейл</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="password">Парола</label>
-                    <input type="password" id="password" name="password" required>
+                    <label for="registerEmail">Имейл</label>
+                    <input type="email" id="registerEmail" placeholder="Enter your email" required>
                 </div>
                 <div class="form-group">
-                    <label for="confirm-password">Потвърдете паролата</label>
-                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    <label for="registerPassword">Парола</label>
+                    <input type="password" id="registerPassword" placeholder="Enter your password" required>
                 </div>
                 <div class="form-group">
-                    <label for="egn">ЕГН</label>
-                    <input type="text" id="egn" name="egn" required>
+                    <label for="confirmPassword">Потвърдете паролата</label>
+                    <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
                 </div>
                 <div class="form-group">
-                    <label for="id-number">Номер на ЛК</label>
-                    <input type="text" id="id-number" name="id-number" required>
+                    <label for="egn">Име и фамилия</label>
+                    <input type="text" id="egn" placeholder="Enter your name" required>
                 </div>
                 <div class="form-group">
-                    <label for="phone">Телефонен номер</label>
-                    <input type="tel" id="phone" name="phone" required>
-                </div>
-                <div class="form-group video-instruction">
-                    <h3>Видео инструкции за регистрация:</h3>
-                    <video width="100%" controls>
-                        <source src="registration-instructions.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+                    <label for="lkNumber">Държава</label>
+                    <input type="text" id="lkNumber" placeholder="Enter your country" required>
                 </div>
                 <div class="form-group">
-                    <button type="submit" class="register-btn">Register</button>
+                    <label for="phoneNumber">Град</label>
+                    <input type="text" id="phoneNumber" placeholder="Enter your city" required>
                 </div>
+
+                <!-- Нови полета -->
+                <div class="form-group">
+                    <label for="address">Улица</label>
+                    <input type="text" id="address" placeholder="Enter your address" required>
+                </div>
+                <div class="form-group">
+                    <label for="city">Пощенски код</label>
+                    <input type="text" id="city" placeholder="Enter your postal code" required>
+                </div>
+                <div class="form-group">
+                    <label for="postalCode">Пол</label>
+                    <input type="text" id="postalCode" placeholder="Enter your sex" required>
+                </div>
+                <div class="form-group">
+                    <label for="country">Лична карта №</label>
+                    <input type="text" id="country" placeholder="Enter your Identity Card Number" required>
+                </div>
+                <div class="form-group">
+                    <label for="profession">Лична карта издадена на</label>
+                    <input type="text" id="profession" placeholder="" required>
+                </div>
+                <div class="form-group">
+                    <label for="employer">Лична карта издадена от</label>
+                    <input type="text" id="employer" placeholder="" required>
+                </div>
+                <div class="form-group">
+                    <label for="income">Лична карта изтичаща на</label>
+                    <input type="text" id="income" placeholder="" required>
+                </div>
+
+                <button type="submit" class="register-btn">Register</button>
             </form>
-        </section>
+        </div>
     </main>
 
     <footer>
-        <p>&copy; Bank System 2024. All rights reserved.</p>
+        <p>&copy; 2024 Infinia created by Albiceleste.</p>
     </footer>
+
+    <script src="register.js"></script>
 </body>
 </html>
-
