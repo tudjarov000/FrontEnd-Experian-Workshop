@@ -1,0 +1,236 @@
+/* General body styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header styles with gradient */
+header {
+  background: linear-gradient(to right, #004c36, #58c893); /* Градиент от тъмно зелено към светло зелено */
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 16px;
+  padding: 8px 15px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  transition: background-color 0.3s, border 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid #fff;
+}
+
+/* Main content */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+  background-color: #fff; /* Бял фон */
+  position: relative;
+}
+
+/* Добавяне на изображение по средата на всяка страница */
+main::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url('bank-system-image.jpg'); /* Тук добавяте подходящо изображение */
+  background-size: cover;
+  background-position: center;
+  width: 300px;
+  height: 200px;
+  opacity: 0.2; /* Слаба видимост на изображението за фон */
+  z-index: -1;
+}
+
+.welcome-section h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #004c36;
+  margin-bottom: 20px;
+}
+
+.welcome-section p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.cta-button {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #004c36;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #58c893;
+  transform: translateY(-5px);
+}
+
+/* Login and Register sections */
+.login-section, .register-section {
+  width: 100%;
+  max-width: 500px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-section h2, .register-section h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #004c36;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.form-group input {
+  padding: 12px;
+  font-size: 16px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+  border-color: #004c36;
+  outline: none;
+}
+
+.register-btn, .login-btn {
+  padding: 12px 30px;
+  background-color: #004c36;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.register-btn:hover, .login-btn:hover {
+  background-color: #58c893;
+  transform: translateY(-5px);
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #004c36;
+  color: #fff;
+  font-size: 14px;
+}
+/* Main content - добавяне на изображението като фон на всяка страница */
+main::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url('images/finance511.jpg'); /* Път до изображението */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1; /* Прозрачност, за да не е много натрапчиво */
+  z-index: -1; /* Позициониране зад съдържанието */
+}
+
+/* За основния контейнер на съдържанието, задаваме position: relative */
+main {
+  position: relative;
+  z-index: 1; /* Позициониране над фона */
+  background-color: rgba(255, 255, 255, 0.8); /* Лек бял фон с прозрачност, за да може текстът да се чете */
+  padding: 50px;
+  text-align: center;
+}
+
+/* Основни стилове за страницата за бисквитки */
+.cookie-policy-section {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cookie-policy-section h2 {
+  font-size: 32px;
+  color: #004c36;
+  margin-bottom: 20px;
+}
+
+.cookie-policy-section p, .cookie-policy-section ul {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.cookie-policy-section h3 {
+  font-size: 24px;
+  color: #004c36;
+  margin-bottom: 15px;
+}
+
+.cookie-policy-section ul {
+  list-style: disc;
+  padding-left: 40px;
+}
+
+.cookie-policy-section ul li {
+  margin-bottom: 10px;
+}
+
