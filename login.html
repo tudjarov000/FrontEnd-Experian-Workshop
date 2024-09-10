@@ -3,48 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Bank System</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Login</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">
-                <a href="index.html">Our Bank System</a>
-            </div>
-            <div class="nav-links">
-                <a href="login.html">Login</a>
-                <a href="register.html">Register</a>
+                <a href="index.html">Infinia</a>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="login-section">
-            <h2>Влизане във вашия акаунт</h2>
-            <form action="#" class="login-form">
+        <!-- Секция за вход в системата -->
+        <div id="login-section" class="login-section">
+            <h2>Login</h2>
+            <form id="loginForm">
                 <div class="form-group">
-                    <label for="username">Потребителско име</label>
-                    <input type="text" id="username" name="username" required>
-                </div>
-                <div class="form-group">
-                    <label for="password">Парола</label>
-                    <input type="password" id="password" name="password" required>
+                    <label for="loginUsername">Username</label>
+                    <input type="text" id="loginUsername" placeholder="Enter your username" required>
                 </div>
                 <div class="form-group">
-                    <button type="submit" class="login-btn">Login</button>
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" placeholder="Enter your password" required>
                 </div>
-                <div class="forgot-password">
-                    <a href="#">Забравена парола?</a>
-                </div>
+                <button type="submit" class="login-btn">Login</button>
             </form>
-        </section>
+        </div>
     </main>
 
     <footer>
-        <p>&copy; Bank System 2024. All rights reserved.</p>
+        <p>&copy; 2024 Infinia created by Albiceleste.</p>
     </footer>
+
+    <script src="login.js"></script>
+</body>
+</html>
 </body>
 </html>
 
