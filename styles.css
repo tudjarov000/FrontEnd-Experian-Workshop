@@ -1,8 +1,8 @@
 /* General body styles */
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #f7f7f7;
-  color: #333;
+  background-color: #FFFFFF; /* Бял фон */
+  color: #0033A0; /* Тъмносин текст */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -10,7 +10,7 @@ body {
 
 /* Header styles with gradient */
 header {
-  background: linear-gradient(to right, #004c36, #58c893); /* Градиент от тъмно зелено към светло зелено */
+  background: linear-gradient(to right, #0033A0, #630460); /* Градиент от тъмносиньо към лилаво */
   padding: 20px 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -24,14 +24,14 @@ nav {
 }
 
 .logo a {
-  color: #fff;
+  color: #FFFFFF; /* Бяло лого */
   font-size: 24px;
   font-weight: bold;
   text-decoration: none;
 }
 
 .nav-links a {
-  color: #fff;
+  color: #FFFFFF; /* Бели линкове */
   text-decoration: none;
   margin-left: 20px;
   font-size: 16px;
@@ -54,7 +54,7 @@ main {
   align-items: center;
   text-align: center;
   padding: 50px;
-  background-color: #fff; /* Бял фон */
+  background-color: #F4ABB7; /* Светлорозов фон */
   position: relative;
 }
 
@@ -77,20 +77,20 @@ main::before {
 .welcome-section h2 {
   font-size: 42px;
   font-weight: 700;
-  color: #004c36;
+  color: #630460; /* Лилаво */
   margin-bottom: 20px;
 }
 
 .welcome-section p {
   font-size: 18px;
   margin-bottom: 30px;
-  color: #555;
+  color: #0033A0; /* Тъмносин текст */
 }
 
 .cta-button {
   padding: 15px 30px;
   font-size: 18px;
-  background-color: #004c36;
+  background-color: #DA1884; /* Розов бутон */
   color: #fff;
   border: none;
   border-radius: 25px;
@@ -100,7 +100,7 @@ main::before {
 }
 
 .cta-button:hover {
-  background-color: #58c893;
+  background-color: #F4ABB7; /* Светлорозов при hover */
   transform: translateY(-5px);
 }
 
@@ -109,7 +109,7 @@ main::before {
   width: 100%;
   max-width: 500px;
   margin: 50px auto;
-  background-color: #fff;
+  background-color: #FFFFFF; /* Бял фон */
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -118,7 +118,7 @@ main::before {
 .login-section h2, .register-section h2 {
   font-size: 30px;
   margin-bottom: 20px;
-  color: #004c36;
+  color: #630460; /* Лилаво */
   text-align: center;
 }
 
@@ -130,25 +130,26 @@ main::before {
   font-size: 16px;
   margin-bottom: 5px;
   display: block;
+  color: #0033A0; /* Тъмносин текст */
 }
 
 .form-group input {
   padding: 12px;
   font-size: 16px;
   width: 100%;
-  border: 1px solid #ddd;
+  border: 1px solid #630460; /* Лилав контур */
   border-radius: 5px;
   transition: border-color 0.3s;
 }
 
 .form-group input:focus {
-  border-color: #004c36;
+  border-color: #DA1884; /* Розов при фокус */
   outline: none;
 }
 
 .register-btn, .login-btn {
   padding: 12px 30px;
-  background-color: #004c36;
+  background-color: #DA1884; /* Розови бутони */
   color: #fff;
   border: none;
   border-radius: 25px;
@@ -159,7 +160,7 @@ main::before {
 }
 
 .register-btn:hover, .login-btn:hover {
-  background-color: #58c893;
+  background-color: #F4ABB7; /* Светлорозов при hover */
   transform: translateY(-5px);
 }
 
@@ -167,10 +168,11 @@ main::before {
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #004c36;
-  color: #fff;
+  background-color: #0033A0; /* Тъмносин футър */
+  color: #FFFFFF;
   font-size: 14px;
 }
+
 /* Main content - добавяне на изображението като фон на всяка страница */
 main::before {
   content: '';
@@ -201,27 +203,27 @@ main {
   max-width: 800px;
   margin: 50px auto;
   padding: 20px;
-  background-color: #fff;
+  background-color: #FFFFFF; /* Бял фон */
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .cookie-policy-section h2 {
   font-size: 32px;
-  color: #004c36;
+  color: #630460; /* Лилаво */
   margin-bottom: 20px;
 }
 
 .cookie-policy-section p, .cookie-policy-section ul {
   font-size: 18px;
   line-height: 1.6;
-  color: #333;
+  color: #0033A0; /* Тъмносин текст */
   margin-bottom: 20px;
 }
 
 .cookie-policy-section h3 {
   font-size: 24px;
-  color: #004c36;
+  color: #630460; /* Лилаво */
   margin-bottom: 15px;
 }
 
@@ -233,7 +235,6 @@ main {
 .cookie-policy-section ul li {
   margin-bottom: 10px;
 }
-/* Добави този код в съществуващия styles.css файл */
 
 /* Main menu container */
 .main-menu {
@@ -244,14 +245,14 @@ main {
 .main-menu h2 {
   font-size: 30px;
   margin-bottom: 20px;
-  color: #004c36;
+  color: #630460; /* Лилаво */
 }
 
 /* Menu buttons */
 .menu-button {
   padding: 15px 30px;
   font-size: 18px;
-  background-color: #004c36;
+  background-color: #DA1884; /* Розови бутони */
   color: #fff;
   border: none;
   border-radius: 25px;
@@ -262,6 +263,6 @@ main {
 }
 
 .menu-button:hover {
-  background-color: #58c893;
+  background-color: #F4ABB7; /* Светлорозово при hover */
   transform: translateY(-5px);
 }
